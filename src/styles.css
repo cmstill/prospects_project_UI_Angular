@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	background-color: rgb(112, 128, 144);
+	color: rgb(255, 228, 196);
+}
+
+header {
+	text-align: center;
+}
+
+.prospect-form-subheader {
+	font-size: 1.5em;
+	color: rgb(199, 130, 60)
+}
+
+.front-page-prospect-form {
+	width: auto;
+	margin: .5em;
+	padding: .5em;
+	border: 6px solid #333;
+	border-radius: 14px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+	display: inline-block;
+	background-color: rgb(50, 66, 83);
+}
+
+#forms-wrapper {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+#prospects-header {
+	text-align: center;
+	font-size: 400%;
+	color: rgb(245, 245, 245);
+}
+
+.prospect-form-submit-button {
+	text-align: center;
+}
+
+.front-page-prospect-form {
+	text-align: center;
+}
+
+.front-page-prospect-form input[type="text"],
+.front-page-prospect-form input[type="number"] {
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 200px; 
+}
+
+.prospect-form-subheader {
+	font-weight: bold;
+	margin-top: 20px;
+	display: block;
+}
+
+.prospect-form-submit-button {
+	margin-top: 20px;
+} 
+
+
+.wide-receiver-form-label {
+	font-size:;
+}

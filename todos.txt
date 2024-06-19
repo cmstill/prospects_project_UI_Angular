@@ -1,0 +1,10 @@
+My dropdowns aren't working here but are working in my non-angular project.  Why?
+	- maybe has to do w/ popper?  I need to add that in scripts in angular.json?
+
+
+Favicon and menu icon are both not displaying.
+	- I have them both where they're supposed to be and referring to the correct file path I think
+	- and I tried to mess with angular.json to add src/assets
+	- still not working
+
+	
