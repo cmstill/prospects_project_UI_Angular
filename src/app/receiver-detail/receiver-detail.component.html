@@ -1,0 +1,69 @@
+<div>
+	<h1 id="prospects-header">Input Prospect</h1>
+</div>
+<br>
+<div id="forms-wrapper">
+	<div id="WRSform" class="front-page-prospect-form">
+		<h2>Receiver</h2>
+		<br>
+		ID: <input type="text" required [(ngModel)]="receiver.id">
+		<br>
+		Name: <input type="text" required [(ngModel)]="receiver.name" placeholder="name">
+		<!-- ngModel here is 2-way binding that w/ angular.  If I input a name it changes receiver.name in memory -->
+		<br>
+		Year: <input type="text" required [(ngModel)]="receiver.year">
+		<br>
+		Position: <select id="position-selector">
+			<option value="receiver">Receiver</option>
+			<option value="runningback">Running Back</option>
+			<option value="tightend">Tight End</option>
+		</select>
+		<br><br>
+		<span class="prospect-form-subheader">Production</span>
+		<br>
+		Yards/Team Pass Attempt: <input type="text" [(ngModel)]="receiver.ytpa" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		Market Share of Targets: <input type="text" [(ngModel)]="receiver.targetShare" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		Breakout Year: <input type="number" [(ngModel)]="receiver.boy" required>
+		<br>
+		Dominator Rating: <input type="text" [(ngModel)]="receiver.dom" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		<span class="prospect-form-subheader">Pedigree</span>
+		<br>
+		Draft Capital: <input type="text" [(ngModel)]="receiver.capital" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		Film Grade: <input type="text" [(ngModel)]="receiver.film" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		Declaration Year: <input type="number" [(ngModel)]="receiver.declare" required>
+		<br>
+		Rivals Grade: <input type="number" [(ngModel)]="receiver.rivals" required>
+		<br>
+		Conference: <input type="text" [(ngModel)]="receiver.confrence" required>
+		<br>
+		<span class="prospect-form-subheader">Physical Traits</span>
+		<br>
+		Height: <input type="text" [(ngModel)]="receiver.height" required>
+		<!-- again 6010 format needs to be validated here-->
+		<br>
+		Weight: <input type="text" [(ngModel)]="receiver.weight" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br>
+		RAS: <input type="text" [(ngModel)]="receiver.ras" pattern="\d+(\.\d{1,2})?"
+			title="input two or less decimal places" required>
+		<br><br>
+		<div class="prospect-form-submit-button">
+			<button type="button" class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Reciever</button>
+		</div>
+		 <div *ngIf="receiver.id"  class="prospect-form-submit-button">
+			<button type="button" class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Reciever</button>
+		</div>
+		<!-- buttons are handeled differently w/ angular...don't need type submit...instead calling a function on click-->
+
+		<!-- This button will eventually submit all the above information as a new WR via the WR api route-->
+	</div>
