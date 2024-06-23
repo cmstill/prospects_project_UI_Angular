@@ -24,3 +24,14 @@ IDEAS FOR APPLICATION/STRUCTURE:
 
 	So in my dashboard, I'll have them all displayed as buttons and the buttons will show the receivers name + grade
 		- then each receiver will have a detials page associated and if I click, it will show all the detials for that receiver in a table maybe
+
+
+Okay things to talk about w/ Cameron tomorrow:
+
+- I need my form to be alone in home menu...and that's not a detail page maybe ask how to move that to like receiverForm instead of details component 
+
+- I need there to be a receiver list that displays the receivers I've created along with the grades -- and here I can handle deletion maybe
+
+
+---
+- with the example I've been following, my receivers dashboard does not link up to my receivers list the way his did

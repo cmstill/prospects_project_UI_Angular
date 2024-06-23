@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { ReceiverService } from '../receiver.service';
 import { NgFor, NgIf } from '@angular/common';
 import { ReceiverDetailComponent } from '../receiver-detail/receiver-detail.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-receivers',
   standalone: true,
-  imports: [FormsModule, NgFor, NgIf, ReceiverDetailComponent],
+  imports: [FormsModule, NgFor, NgIf, ReceiverDetailComponent, RouterLink],
   templateUrl: './receivers.component.html',
   styleUrl: './receivers.component.css'
 })
