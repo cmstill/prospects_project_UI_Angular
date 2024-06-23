@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ReceiverService {
-  private receiversUrl = 'http://localhost:3000/api/v1/receivers' // maybe this is api/v1/receivers?  anyway this is where we set the url to our api endpoints
+  private receiversUrl = '/api/v1/receivers'; // maybe this is api/v1/receivers?  anyway this is where we set the url to our api endpoints
 
 
   constructor(
