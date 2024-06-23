@@ -12,3 +12,15 @@ Favicon not displaying.
 	How to handle code for grading the players?
 
 	ask about the selcted receiver function in ReceiversComponent...I don't really understand what is going on here
+
+	When I build the table to display my receivers, I need them to be sorted by grade...so I need to figure out the code for the grading then
+
+	Change ngIf on the update receiver button to if the id exists in the database
+
+
+
+
+IDEAS FOR APPLICATION/STRUCTURE:
+
+	So in my dashboard, I'll have them all displayed as buttons and the buttons will show the receivers name + grade
+		- then each receiver will have a detials page associated and if I click, it will show all the detials for that receiver in a table maybe

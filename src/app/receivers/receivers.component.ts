@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Receiver } from '../receiver';
 import { FormsModule } from '@angular/forms';
 import { ReceiverService } from '../receiver.service';
@@ -15,7 +15,7 @@ import { ReceiverDetailComponent } from '../receiver-detail/receiver-detail.comp
 
 export class ReceiversComponent {
 
-  selectedReceiver: Receiver = {} as Receiver; // so here I am creating a variable selectedReceiver and setting its type to = the Receiver interface that I created in recevier.ts and then imported
+  selectedReceiver!: Receiver; // so here I am creating a variable selectedReceiver and setting its type to = the Receiver interface that I created in recevier.ts and then imported
   receivers: Receiver[] = [];
 
   constructor(private receiverService: ReceiverService) { } // this constructor function injects the service we created earlier into our receivers resource
