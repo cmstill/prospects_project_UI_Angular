@@ -37,3 +37,5 @@ Okay things to talk about w/ Cameron tomorrow:
 - with the example I've been following, my receivers dashboard does not link up to my receivers list the way his did
 
 - I've done something with routing to home that reloads the application instead of staying on single page
+
+- proxy.conf.json file in example that he moved to src...I don't have this?

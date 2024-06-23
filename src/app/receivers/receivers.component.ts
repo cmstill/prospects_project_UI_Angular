@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
 export class ReceiversComponent {
 
   selectedReceiver!: Receiver; // so here I am creating a variable selectedReceiver and setting its type to = the Receiver interface that I created in recevier.ts and then imported
-  receivers: Receiver[] = [];
+  receivers: Receiver[] = []; // this is what displays our list of receivers...so when we want to delete we can delete it from here
 
   constructor(private receiverService: ReceiverService) { } // this constructor function injects the service we created earlier into our receivers resource
 

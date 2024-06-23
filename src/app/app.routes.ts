@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReceiverDetailComponent } from './receiver-detail/receiver-detail.component';
 
 export const routes: Routes = [
-	{ path: 'receivers', component: ReceiversComponent },
+	{ path: 'receivers', component: ReceiversComponent},
 	{ path: 'dashboard', component: DashboardComponent},
 	{ path: '', redirectTo: '/receivers', pathMatch: 'full'},
 	{ path: 'widgets/:id', component: ReceiverDetailComponent}
