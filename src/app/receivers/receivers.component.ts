@@ -27,9 +27,11 @@ export class ReceiversComponent {
     }); // this is calling getReceivers() function from my receiverService and that returns an observable so I have to add .subscribe function which accepts a callback that tells us what function to execute when that observable changes ie when we get data from an api.  the function makes our receivers property = whatever is passed to subscribe
   }
 
-  select = (receiver: Receiver): void => {
-    this.selectedReceiver = receiver /* this function is letting me select a receiver in my html on click and then setting my selectedReceiver variable = to whatever it is that I've selected */
-  }
+  deleteReceiver = (id: string): void => {
+    this.receiverService.deleteReceiver(id).subscribe((res) => {
+      console.log(res);
+    });
+  };
 
   ngOnInit(): void {
     this.getReceivers();

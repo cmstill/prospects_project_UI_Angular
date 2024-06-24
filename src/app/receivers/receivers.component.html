@@ -1,7 +1,8 @@
 <div class="container">
 		<h2 id="receivers-list-header">List of Receivers : </h2>
 		<ul class="receivers-list">
-			<li *ngFor="let receiver of receivers" (click)="select(receiver)">
+			<li *ngFor="let receiver of receivers">
+				<button type="button" class="btn btn-danger btn"  (click)="deleteReceiver(receiver.id)">X</button> <!--this click here is a click even in angular and the deleteREceiver() is a refrence to the function I want to call on click-->
 				<a routerLink="/receivers/{{receiver.id}}">
 					<span>{{ receiver.name }} ( {{ receiver.height }} )</span>
 				</a>
@@ -11,4 +12,3 @@
 		</ul>
 	</div>
 
-	

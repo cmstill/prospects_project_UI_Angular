@@ -23,10 +23,8 @@ export class ReceiverService {
     return this.http.get<Receiver>(`${this.receiversUrl}/${id}`); // this is using http.get and setting that type to receiver then passing what wer're getting as the receiversUrl we set above in ReceiverService with the path param of id (this is what /${id} is doing)
   }
 
-  deleteReceiver = (id: string): Observable<boolean> => {
-    this.http.delete(`${this.receiversUrl}/${id}`)
-
-    return of(true);
+  deleteReceiver = (id: string): Observable<Object> => {
+    return this.http.delete(`${this.receiversUrl}/${id}`);
   }
 
   updateReceiver = (id: string, receiver: Receiver): Observable<Receiver> => {
