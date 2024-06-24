@@ -3,14 +3,11 @@
 		{{ error }}
 	</a>
 </div>
-
-<div>
-	<h1 id="prospects-header">Input Prospect</h1>
-</div>
 <br>
-<div id="forms-wrapper">
+<div id="forms-wrapper" class="container">
 	<div id="WRSform" class="front-page-prospect-form">
-		<h2>Receiver</h2>
+		<h2 id="input-receiver-header">Input Receiver</h2>
+		<br>
 		Name: <input type="text" required [(ngModel)]="receiver.name" placeholder="name">
 		<!-- ngModel here is 2-way binding that w/ angular.  If I input a name it changes receiver.name in memory -->
 		<br>
@@ -70,3 +67,11 @@
 
 		<!-- This button will eventually submit all the above information as a new WR via the WR api route-->
 	</div>
+
+
+      
+
+
+
+
+

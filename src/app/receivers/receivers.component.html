@@ -1,16 +1,31 @@
 <div class="container">
-		<h2 id="receivers-list-header">List of Receivers : </h2>
-		<ul class="receivers-list">
-			<li *ngFor="let receiver of receivers">
-				<button type="button" class="btn btn-danger btn"  (click)="deleteReceiver(receiver.id)">X</button> <!--this click here is a click even in angular and the deleteREceiver() is a refrence to the function I want to call on click-->
-				<a routerLink="/receivers/{{receiver.id}}">
-					<span>{{ receiver.name }} ( {{ receiver.height }} )</span>
-				</a>
-			</li>
-		</ul>
-	</div>
+	<h2 id="receivers-list-header">List of Receivers : </h2>
+	<table id="receivers-list-table" class="table table-bordered table-xs">
+		<tr id="receivers-table-top-row">
+			<th>Delete</th>
+			<th>Name</th>
+		</tr>
 
-	<!-- <tr *ngFor="let item of userResults">
+		<tr *ngFor="let receiver of receivers" class="receivers-table-body-row">
+			<td>
+				<button type="button" title="Are you sure you want to delete?"  class="btn btn-danger btn" (click)="deleteReceiver(receiver.id)">Delete</button>
+				<!--this click here is a click even in angular and the deleteREceiver() is a refrence to the function I want to call on click-->
+			</td>
+			<td>
+				<a routerLink="/receivers/{{receiver.id}}">
+					<span id="receiver-name">{{ receiver.name }}</span>
+				</a>
+			</td>
+		</tr>
+
+		<tr class="receivers-table-body-row">
+
+		</tr>
+	</table>
+
+</div>
+
+<!-- <tr *ngFor="let item of userResults">
 		<td>{{ item.key }}</td>
 		<td>{{ item.value }}</td>
-	</tr> -->
+	</tr>   this is code snipped to use ngFor to generate a table-->

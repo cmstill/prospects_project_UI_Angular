@@ -6,3 +6,17 @@
 #receivers-list-header {
 	text-align: left;
 }
+
+#receivers-table-top-row {
+	background-color: #333;
+}
+
+#receivers-list-table {
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto
+}
+
+.receivers-table-body-row {
+	background-color: rgb(50, 66, 83);
+}
