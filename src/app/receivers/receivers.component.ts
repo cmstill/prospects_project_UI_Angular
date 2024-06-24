@@ -29,6 +29,7 @@ export class ReceiversComponent {
 
   deleteReceiver = (id: string): void => {
     this.receiverService.deleteReceiver(id).subscribe((res) => {
+      this.getReceivers(); /*this invokes getWidgets so that our list refreshes after delete*/
       console.log(res);
     });
   };
