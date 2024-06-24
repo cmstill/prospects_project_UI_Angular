@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ReceiverService } from '../receiver.service';
+import { Router } from '@angular/router'
 import { Receiver } from '../receiver';
 import { FormsModule } from '@angular/forms';
 
@@ -12,12 +13,13 @@ import { FormsModule } from '@angular/forms';
 })
 export class ReceiversCreateComponent {
   receiver = {} as Receiver;
-  constructor(private receiverService: ReceiverService) {} // this is how we inject a service w/ the constructor 
+
+  constructor(private receiverService: ReceiverService, private router: Router) {} // this is how we inject a service w/ the constructor 
 
   createReceiver = (): void => {
     this.receiverService.createReceiver(this.receiver)
     .subscribe((res) => {
-      console.log(res);
+      this.router.navigate(['/receivers']);
     }); // and this calls the receiverService that we've injected so we can call the createReceiver function and pass it this receiver
   }
 }

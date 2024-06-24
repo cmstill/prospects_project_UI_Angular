@@ -39,3 +39,7 @@ Okay things to talk about w/ Cameron tomorrow:
 - I've done something with routing to home that reloads the application instead of staying on single page
 
 - proxy.conf.json file in example that he moved to src...I don't have this?
+
+
+
+THIS IS THE ONE THAT WORKS!!
