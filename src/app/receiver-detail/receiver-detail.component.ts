@@ -24,12 +24,25 @@ export class ReceiverDetailComponent {
   getReceiver = (): void => {
     const receiverID = this.route.snapshot.paramMap.get('id')
 
-    if (receiverID) {
+    if (receiverID && this.receiver) {
       this.receiverService.getReceiver(receiverID)
-      .subscribe((receiver: Receiver) => {
-        this.receiver = receiver;});
+        .subscribe((receiver: Receiver) => {
+          this.receiver = receiver;
+        });
     }
-   
+    
+  }
+
+  updateReceiver = (): void => {
+
+    const receiverID = this.route.snapshot.paramMap.get('id')
+
+    if (receiverID) {
+      this.receiverService.updateReceiver(receiverID, this.receiver)
+        .subscribe((receiver: Receiver) => {
+          this.receiver = receiver;
+        });
+    }
   }
 
   ngOnInit(): void {

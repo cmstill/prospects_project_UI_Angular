@@ -1,5 +1,5 @@
 <div>
-	<h1 id="prospects-header">Input Prospect</h1>
+	<h1 id="prospects-header">Prospect Details</h1>
 </div>
 <br>
 <div id="forms-wrapper">
@@ -13,12 +13,6 @@
 		<br>
 		Year: <input type="text" required [(ngModel)]="receiver.year">
 		<br>
-		Position: <select id="position-selector">
-			<option value="receiver">Receiver</option>
-			<option value="runningback">Running Back</option>
-			<option value="tightend">Tight End</option>
-		</select>
-		<br><br>
 		<span class="prospect-form-subheader">Production</span>
 		<br>
 		Yards/Team Pass Attempt: <input type="text" [(ngModel)]="receiver.ytpa" pattern="\d+(\.\d{1,2})?"
@@ -58,10 +52,10 @@
 			title="input two or less decimal places" required>
 		<br><br>
 		<div class="prospect-form-submit-button">
-			<button type="button" class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Reciever</button>
+			<button type="button" class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Receiver</button>
 		</div>
 		 <div *ngIf="receiver.id"  class="prospect-form-submit-button">
-			<button type="button" class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Reciever</button>
+			<button type="button" (click)="updateReceiver()"  class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Receiver</button>
 		</div>
 		<!-- buttons are handeled differently w/ angular...don't need type submit...instead calling a function on click-->
 

@@ -16,7 +16,8 @@ export const RECEIVERS: Receiver[] = [
 		confrence: 'SEC',
 		height: 6010,
 		weight: 209,
-		ras: 9.94
+		ras: 9.94,
+		grade:3.1
 
 	},
 	{
@@ -34,7 +35,8 @@ export const RECEIVERS: Receiver[] = [
 		confrence: 'ACC',
 		height: 6010,
 		weight: 192,
-		ras: 7.21
+		ras: 7.21,
+		grade: 5
 	},
 	{
 		id: '3',
@@ -52,6 +54,7 @@ export const RECEIVERS: Receiver[] = [
 		height: 5010,
 		weight: 191,
 		ras: 9.12,
+		grade: 5
 	}
 ]
 

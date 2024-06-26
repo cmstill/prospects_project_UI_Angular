@@ -14,6 +14,7 @@ export interface Receiver {
 	height: number;
 	weight: number;
 	ras: number;
+	grade: number;
 };
 
 

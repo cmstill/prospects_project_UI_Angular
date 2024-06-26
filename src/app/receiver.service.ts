@@ -29,7 +29,7 @@ export class ReceiverService {
 
   updateReceiver = (id: string, receiver: Receiver): Observable<Receiver> => {
 
-    return this.http.put<Receiver>(`${this.receiversUrl}/${id}`, receiver); //this is going to be as a full replace instead of a patch...I only have a patch in my endpoint so we'll see how this works...probably going to have problems. 
+    return this.http.patch<Receiver>(`${this.receiversUrl}/${id}`, receiver); //this is going to be as a full replace instead of a patch...I only have a patch in my endpoint so we'll see how this works...probably going to have problems. 
   }
 
   createReceiver = (receiver: Receiver): Observable<Receiver> => {
