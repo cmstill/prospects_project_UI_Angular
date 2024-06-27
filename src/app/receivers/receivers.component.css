@@ -3,6 +3,8 @@
 	text-align: left;
 }
 
+
+
 #receivers-list-header {
 	text-align: center;
 	font-family: "Azeret Mono", monospace;
@@ -20,6 +22,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Open Sans';
+	border: 1px ;
+	border-radius: 8px;
 }
 
 .receivers-table-body-row {
