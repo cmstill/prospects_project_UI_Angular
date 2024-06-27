@@ -10,7 +10,7 @@ export interface Receiver {
 	film: number;
 	declare: number;
 	rivals: number;
-	confrence: string;
+	conference: string;
 	height: number;
 	weight: number;
 	ras: number;

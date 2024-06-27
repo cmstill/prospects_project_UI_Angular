@@ -5,6 +5,7 @@
 <div id="forms-wrapper">
 	<div id="WRSform" class="front-page-prospect-form">
 		<h2>Receiver</h2>
+		ID: <input type="text" required [(ngModel)]="receiver.id">
 		<br>
 		Name: <input type="text" required [(ngModel)]="receiver.name" placeholder="name">
 		<!-- ngModel here is 2-way binding that w/ angular.  If I input a name it changes receiver.name in memory -->
@@ -36,7 +37,7 @@
 		<br>
 		Rivals Grade: <input type="number" [(ngModel)]="receiver.rivals" required>
 		<br>
-		Conference: <input type="text" [(ngModel)]="receiver.confrence" required>
+		Conference: <input type="text" [(ngModel)]="receiver.conference" required>
 		<br>
 		<span class="prospect-form-subheader">Physical Traits</span>
 		<br>
@@ -52,9 +53,16 @@
 		<div class="prospect-form-submit-button">
 			<button type="button" class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Receiver</button>
 		</div>
-		 <div *ngIf="receiver.name"  class="prospect-form-submit-button">
-			<button type="button" (click)="updateReceiver()"  class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Receiver</button>
+
+		<div id="snackbar" [ngClass]="{ 'show': showSnackBarMessage }">{{ snackbarMessage }}</div>
+		
+		<div *ngIf="receiver.name" class="prospect-form-submit-button">
+			<button type="button" (click)="updateReceiver()"
+				class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Receiver</button>
 		</div>
+
+		
+
 		<!-- buttons are handeled differently w/ angular...don't need type submit...instead calling a function on click-->
 
 		<!-- This button will eventually submit all the above information as a new WR via the WR api route-->

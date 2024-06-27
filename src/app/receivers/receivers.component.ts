@@ -21,7 +21,7 @@ export class ReceiversComponent {
 
   currentPageReceivers: Receiver[] = [];
   currentPage = 0;
-  pageSize = 5;
+  pageSize = 20;
   pageCount = 0;
   showSnackbarMessage = false;
   snackbarMessage= '';
@@ -57,7 +57,7 @@ export class ReceiversComponent {
       setTimeout(() => {
         this.showSnackbarMessage = false;
       }, 3000);
-      
+
       console.log(res);
     });
   };

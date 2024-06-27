@@ -44,7 +44,7 @@
 		<br>
 		Rivals Grade: <input type="number" [(ngModel)]="receiver.rivals" required>
 		<br>
-		Conference: <input type="text" [(ngModel)]="receiver.confrence" required>
+		Conference: <input type="text" [(ngModel)]="receiver.conference" required>
 		<br>
 		<span class="prospect-form-subheader">Physical Traits</span>
 		<br>
@@ -58,20 +58,13 @@
 			title="input two or less decimal places" required>
 		<br><br>
 		<div class="prospect-form-submit-button">
-			<button type="button"  (click)="createReceiver()"  class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Reciever</button>
+			<button type="button" (click)="createReceiver()"
+				class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Receiver</button>
 		</div>
-		 <div *ngIf="receiver.id"  class="prospect-form-submit-button">
-			<button type="button" class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Reciever</button>
+		<div *ngIf="receiver.id" class="prospect-form-submit-button">
+			<button type="button" class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Receiver</button>
 		</div>
 		<!-- buttons are handeled differently w/ angular...don't need type submit...instead calling a function on click-->
 
 		<!-- This button will eventually submit all the above information as a new WR via the WR api route-->
 	</div>
-
-
-      
-
-
-
-
-

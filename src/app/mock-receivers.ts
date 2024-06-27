@@ -13,11 +13,11 @@ export const RECEIVERS: Receiver[] = [
 		film: 6.64,
 		declare: 3,
 		rivals: 5,
-		confrence: 'SEC',
+		conference: 'SEC',
 		height: 6010,
 		weight: 209,
 		ras: 9.94,
-		grade:3.1
+		grade: 3.1
 
 	},
 	{
@@ -32,7 +32,7 @@ export const RECEIVERS: Receiver[] = [
 		film: 6.7,
 		declare: 4,
 		rivals: 4,
-		confrence: 'ACC',
+		conference: 'ACC',
 		height: 6010,
 		weight: 192,
 		ras: 7.21,
@@ -50,7 +50,7 @@ export const RECEIVERS: Receiver[] = [
 		film: 6.5,
 		declare: 3,
 		rivals: 5,
-		confrence: 'SEC',
+		conference: 'SEC',
 		height: 5010,
 		weight: 191,
 		ras: 9.12,
