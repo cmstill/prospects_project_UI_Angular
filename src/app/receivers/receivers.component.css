@@ -5,6 +5,10 @@
 
 #receivers-list-header {
 	text-align: center;
+	font-family: "Azeret Mono", monospace;
+	font-size: 3em;
+	margin-top: .5em;
+	margin-bottom: .5em;
 }
 
 #receivers-table-top-row {
@@ -14,7 +18,8 @@
 #receivers-list-table {
 	text-align: center;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
+	font-family: 'Open Sans';
 }
 
 .receivers-table-body-row {
