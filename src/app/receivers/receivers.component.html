@@ -8,7 +8,7 @@
 		</tr>
 
 		<tr *ngFor="let receiver of currentPageReceivers" class="receivers-table-body-row">
-		
+
 			<td>
 				<a routerLink="/receivers/{{receiver.id}}">
 					<button class="btn btn-tertiary" id="receiver-name">{{ receiver.name }}</button>
@@ -18,12 +18,12 @@
 				{{ receiver.grade }}
 			</td>
 			<td>
-				<button title="Are you sure you want to delete?" type="button"  class="btn btn-danger btn-sm"
+				<button title="Are you sure you want to delete?" type="button" class="btn btn-danger btn-sm"
 					(click)="deleteReceiver(receiver.id)">Delete</button>
 				<div id="snackbar" [ngClass]="{ 'show': showSnackbarMessage}">Receiver Deleted</div>
 				<!--this click here is a click even in angular and the deleteREceiver() is a refrence to the function I want to call on click-->
 			</td>
-		
+
 	</table>
 	<span class="page-btn">
 		<button type="button" (click)="previousPage()" class="btn btn-tertiary">&lt; Prev</button>
