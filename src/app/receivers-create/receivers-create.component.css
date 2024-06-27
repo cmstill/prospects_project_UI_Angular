@@ -6,3 +6,9 @@
 #WRSform {
 	font-family: 'Open Sans';
 }
+
+.front-page-prospect-form .form-control {
+	width: auto; /* Adjust width as needed */
+	margin: 0 auto; /* Center align horizontally */
+	display: block; /* Ensure it behaves as a block element */
+}
