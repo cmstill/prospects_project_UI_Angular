@@ -6,8 +6,6 @@
 	<div id="WRSform" class="front-page-prospect-form">
 		<h2>Receiver</h2>
 		<br>
-		ID: <input type="text" required [(ngModel)]="receiver.id">
-		<br>
 		Name: <input type="text" required [(ngModel)]="receiver.name" placeholder="name">
 		<!-- ngModel here is 2-way binding that w/ angular.  If I input a name it changes receiver.name in memory -->
 		<br>
@@ -54,7 +52,7 @@
 		<div class="prospect-form-submit-button">
 			<button type="button" class="btn btn-outline-light btn-lg prospect-form-submit-button">Create Receiver</button>
 		</div>
-		 <div *ngIf="receiver.id"  class="prospect-form-submit-button">
+		 <div *ngIf="receiver.name"  class="prospect-form-submit-button">
 			<button type="button" (click)="updateReceiver()"  class="btn btn-outline-warning btn-lg prospect-form-submit-button">Update Receiver</button>
 		</div>
 		<!-- buttons are handeled differently w/ angular...don't need type submit...instead calling a function on click-->

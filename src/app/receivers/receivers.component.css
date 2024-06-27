@@ -14,7 +14,7 @@
 #receivers-list-table {
 	text-align: center;
 	margin-left: auto;
-	margin-right:auto
+	margin-right: auto
 }
 
 .receivers-table-body-row {
@@ -22,31 +22,48 @@
 }
 
 #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: rgb(50, 66, 83);
+	color: rgb(255, 228, 196);
+	text-align: center;
+	border-radius: 8px;
+	border-style: solid;
+	border-width: .125em;
+	border-color: antiquewhite;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	left: 50%;
+	bottom: 30px;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 #snackbar.show {
-  visibility: visible;
+	visibility: visible;
 }
 
 @keyframes fadein {
-  from { bottom: 0; opacity: 0; }
-  to { bottom: 30px; opacity: 1; }
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
 }
 
 @keyframes fadeout {
-  from { bottom: 30px; opacity: 1; }
-  to { bottom: 0; opacity: 0; }
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
 }
